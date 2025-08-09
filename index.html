@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bezalel Achoonov - Portfolio Website" />
+  <title>Bezalel Achoonov | Portfolio</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    html, body { font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <h1 class="text-xl font-extrabold tracking-tight">bezalelachoonov</h1>
+      <div class="flex items-center gap-4"><!-- socials later --></div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="max-w-6xl mx-auto px-4 py-10 grid items-center gap-10 md:grid-cols-2">
+    <div class="space-y-5">
+      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        Nice to meet you! I'm <span class="text-indigo-400">Bezalel Achoonov</span>.
+      </h2>
+      <p class="text-white/80">
+        Born in Israel, I'm mainly a Python developer, and working with more technologies like JavaScript, CSS, and HTML.
+      </p>
+      <a href="#contact" class="inline-block rounded-lg bg-indigo-500 hover:bg-indigo-400 transition px-5 py-2 font-semibold">
+        Contact Me
+      </a>
+    </div>
+
+    <div class="justify-self-center">
+      <img src="assets/profile.jpeg" alt="My photo"
+           class="w-44 h-44 md:w-60 md:h-60 rounded-full object-cover ring-2 ring-white/20 shadow-lg">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Technologies I work with:</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="rounded-xl border border-white/10 p-4"><h3 class="font-semibold text-lg">Python</h3></div>
+      <div class="rounded-xl border border-white/10 p-4"><h3 class="font-semibold text-lg">JavaScript</h3></div>
+      <div class="rounded-xl border border-white/10 p-4"><h3 class="font-semibold text-lg">CSS</h3></div>
+    </div>
+  </section>
+
+  <!-- Projects Section (with Game project) -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold mb-2">אפליקציית מזג אוויר</h3>
+        <p class="text-white/80">
+          אפליקציה שמביאה תחזית מזג אוויר בזמן אמת לפי עיר שהמשתמש מקליד, באמצעות ספריית tkinter ו-API של OpenWeatherMap.
+        </p>
+        <a href="https://github.com/bezalel-creator/wheather-app-by-bezalel" target="_blank"
+           class="inline-block mt-4 text-indigo-400 hover:text-indigo-300 underline underline-offset-4">
+          weather app api — open on GitHub
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold mb-2">אפליקציית GUI עם Tkinter</h3>
+        <p class="text-white/80">
+          אפליקציה עם ממשק משתמש גרפי בפייתון. כוללת טפסים, שדות קלט, וכפתורים – נועדה לתרגול ויישום של tkinter.
+        </p>
+        <a href="https://github.com/bezalel-creator/bezalel-tkinter-app" target="_blank"
+           class="inline-block mt-4 text-indigo-400 hover:text-indigo-300 underline underline-offset-4">
+          simple games and gadgets app — open on GitHub
+        </a>
+      </div>
+
+      <!-- Project 3: משחק מחשב -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold mb-2">משחק מחשב</h3>
+        <p class="text-white/80">
+          משחק מחשב שכתבתי בפייתון ( Pygame ): כולל לוגיקת משחק, ציור על המסך, קליטת אירועים מהמשתמש וניקוד.
+        </p>
+        <a href="https://github.com/bezalel-creator/bezalel-s-python-video-game-" target="_blank"
+           class="inline-block mt-4 text-indigo-400 hover:text-indigo-300 underline underline-offset-4">
+          game project — open on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-3xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Contact</h2>
+    <p class="text-white/80 mb-4">
+      I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+    </p>
+
+    <!-- באנר שגיאה גלובלי -->
+    <div id="formBanner"
+         class="hidden mb-4 rounded-lg bg-red-600/90 px-4 py-3 text-sm font-semibold">
+      Please fill in all fields.
+    </div>
+
+    <form id="contact-form" action="https://formspree.io/f/mdkdpgne" method="POST" novalidate
+          class="space-y-4">
+      <div>
+        <input type="text" name="name" id="name" placeholder="Name" required
+               class="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+          autocomplete="email"
+          inputmode="email"
+          class="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+        <small id="email-error" class="hidden text-red-400 text-sm mt-1" aria-live="polite">
+          Please enter a valid .com email address.
+        </small>
+      </div>
+
+      <div>
+        <textarea name="message" id="message" placeholder="Message" rows="5" required
+                  class="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      </div>
+
+      <button type="submit" id="submit-btn"
+              class="btn inline-flex items-center justify-center rounded-lg bg-indigo-500 hover:bg-indigo-400 transition px-5 py-3 font-semibold disabled:opacity-60">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-white/70 text-sm">
+      © 2025 bezalelachoonov
+    </div>
+  </footer>
+
+  <!-- JS validation script (robust + .com requirement) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form      = document.getElementById("contact-form");
+      const banner    = document.getElementById("formBanner");
+
+      const nameInput = document.getElementById("name");
+      const emailInput= document.getElementById("email");
+      const msgInput  = document.getElementById("message");
+      const emailError= document.getElementById("email-error");
+
+      // בדיקות עזר
+      function clean(v) {
+        // הסרת רווחים ותווים בלתי-נראים בקצוות
+        return v.replace(/\u200f|\u200e/g, "").trim();
+      }
+
+      function markInvalid(el) {
+        el.classList.remove("border-white/10","ok","border-green-500");
+        el.classList.add("border-red-500");
+      }
+      function markValid(el) {
+        el.classList.remove("border-white/10","border-red-500");
+        el.classList.add("ok","border-green-500");
+      }
+      function markNeutral(el) {
+        el.classList.remove("border-red-500","border-green-500","ok");
+        el.classList.add("border-white/10");
+      }
+
+      function validateRequired(el) {
+        const ok = clean(el.value).length > 0;
+        if (ok) markValid(el); else markInvalid(el);
+        return ok;
+      }
+
+      function isComEmail(value) {
+        const v = clean(value);
+        // בודק ולידציה דפדפנית + סיום ב-.com (לא רגיש לרישיות)
+        const nativeOK = (() => {
+          // יוצרים input זמני כדי להשתמש ב-Validity API על הערך שעבר ניקוי
+          const t = document.createElement("input");
+          t.type = "email";
+          t.value = v;
+          return t.checkValidity();
+        })();
+        const endsWithCom = /\.com$/i.test(v);
+        return nativeOK && endsWithCom;
+      }
+
+      function validateEmailLive() {
+        const v = clean(emailInput.value);
+        if (v === "") {
+          emailError.classList.add("hidden");
+          markNeutral(emailInput);
+          return;
+        }
+        const valid = isComEmail(v);
+        if (valid) {
+          emailError.classList.add("hidden");
+          markValid(emailInput);
+        } else {
+          emailError.classList.remove("hidden");
+          markInvalid(emailInput);
+        }
+      }
+
+      // בדיקות בזמן אמת
+      nameInput.addEventListener("input", () => validateRequired(nameInput));
+      msgInput .addEventListener("input", () => validateRequired(msgInput));
+      emailInput.addEventListener("input", validateEmailLive);
+      emailInput.addEventListener("blur",  validateEmailLive);
+
+      // בדיקה בעת שליחה
+      form.addEventListener("submit", (e) => {
+        const okName  = validateRequired(nameInput);
+        const okMsg   = validateRequired(msgInput);
+        const okEmail = isComEmail(emailInput.value);
+
+        if (!okEmail) {
+          emailError.classList.remove("hidden");
+          markInvalid(emailInput);
+        }
+
+        if (!okName || !okEmail || !okMsg) {
+          e.preventDefault();
+          banner.classList.remove("hidden");
+          banner.scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+          banner.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
